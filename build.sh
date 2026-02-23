@@ -7,20 +7,20 @@
 # *          Dolphin_Oracle
 # *          MX Linux <http://mxlinux.org>
 # *
-# * This file is part of mx-packageinstaller.
+# * This file is part of snake-store.
 # *
-# * mx-packageinstaller is free software: you can redistribute it and/or modify
+# * snake-store is free software: you can redistribute it and/or modify
 # * it under the terms of the GNU General Public License as published by
 # * the Free Software Foundation, either version 3 of the License, or
 # * (at your option) any later version.
 # *
-# * mx-packageinstaller is distributed in the hope that it will be useful,
+# * snake-store is distributed in the hope that it will be useful,
 # * but WITHOUT ANY WARRANTY; without even the implied warranty of
 # * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # * GNU General Public License for more details.
 # *
 # * You should have received a copy of the GNU General Public License
-# * along with mx-packageinstaller.  If not, see <http://www.gnu.org/licenses/>.
+# * along with snake-store.  If not, see <http://www.gnu.org/licenses/>.
 # **********************************************************************/
 
 set -e
@@ -108,7 +108,7 @@ if [ "$DEBIAN_BUILD" = true ]; then
     echo "Cleaning build directory and debian artifacts..."
     rm -rf "$BUILD_DIR"
     rm -f debian/*.debhelper.log debian/*.substvars debian/files
-    rm -rf debian/.debhelper/ debian/mx-packageinstaller/ obj-*/
+    rm -rf debian/.debhelper/ debian/snake-store/ obj-*/
     rm -f translations/*.qm version.h
     rm -f ../*build* ../*.buildinfo 2>/dev/null || true
 
@@ -122,7 +122,7 @@ if [ "$CLEAN" = true ]; then
     echo "Cleaning build directory and debian artifacts..."
     rm -rf "$BUILD_DIR"
     rm -f debian/*.debhelper.log debian/*.substvars debian/files
-    rm -rf debian/.debhelper/ debian/mx-packageinstaller/ obj-*/
+    rm -rf debian/.debhelper/ debian/snake-store/ obj-*/
     rm -f translations/*.qm version.h
     rm -f ../*build* ../*.buildinfo 2>/dev/null || true
 fi
@@ -156,7 +156,7 @@ echo "Building project with Ninja..."
 cmake --build "$BUILD_DIR" --parallel
 
 echo "Build completed successfully!"
-echo "Executable: $BUILD_DIR/mx-packageinstaller"
+echo "Executable: $BUILD_DIR/snake-store"
 
 # Run tests if built with tests
 if [ "$BUILD_TESTS" = true ]; then

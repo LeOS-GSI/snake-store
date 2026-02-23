@@ -1,7 +1,7 @@
-Source: mx-packageinstaller
+Source: snake-store
 Section: admin
 Priority: optional
-Maintainer: Adrian <adrian@mxlinux.org>
+Maintainer: Harvey186 <harvey186@hotmail.com>
 Build-Depends: debhelper-compat (= 13),
                cmake (>= 3.16),
                ninja-build,
@@ -10,32 +10,25 @@ Build-Depends: debhelper-compat (= 13),
                qt6-tools-dev,
                qt6-tools-dev-tools
 Standards-Version: 3.9.8
-Vcs-Git: git://github.com/MX-Linux/mx-packageinstaller
-Homepage: https://github.com/MX-Linux/mx-packageinstaller
+Vcs-Git: https://github.com/LeOS-GSI/snake-store
+Homepage: http://SnakeOS.de
 
-Package: mx-packageinstaller
+Package: snake-store
 Architecture: any
 Depends: aptitude,
-         mx-packageinstaller-pkglist (>= 17.4),
-         xdg-utils | mx-viewer,
+         snake-store-pkglist (>= 17.4),
+         xdg-utils,
          sudo | pkexec | gksu,
          socat,
          ${misc:Depends},
          ${shlibs:Depends}
 Recommends: flatpak (<< 1.0) | xdg-desktop-portal-gtk,
          flatpak (>= 0.8.9) [amd64]
-Replaces: mx-debian-backports-installer,
-          mx-package-manager,
-          mx-package-manager-pkglist,
-          mx-test-repo-installer
-Provides: mx-debian-backports-installer, mx-test-repo-installer
-Conflicts: mx-debian-backports-installer, mx-test-repo-installer
-Description: Package installation tool for MX Linux
- MX Package Installer is a graphical utility that allows users to easily
- install and manage software packages on MX Linux. It provides a user-friendly
+Description: Package installation tool for SnakeOS
+ Snake Store is a graphical utility that allows users to easily
+ install and manage software packages on SnakeOS. It provides a user-friendly
  interface for:
-  * Installing popular applications from various repositories
-  * Managing packages from the MX Test repository
+  * Installing None US applications from various repositories
   * Installing software from Debian Backports
   * Installing and managing Flatpak applications
   * Simplifying package management without requiring command line knowledge

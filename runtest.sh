@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# runtest.sh - Convenient script to build and run tests for mx-packageinstaller
+# runtest.sh - Convenient script to build and run tests for snake-store
 # Usage: ./runtest.sh [options]
 #   --clean     Clean build before testing
 #   --watch     Run tests in watch mode (requires inotify-tools)
@@ -53,7 +53,7 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
-echo "=== MX Package Installer Test Runner ==="
+echo "=== Snake Store Test Runner ==="
 
 # Clean if requested
 if [ "$CLEAN" = true ]; then

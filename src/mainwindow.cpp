@@ -5,22 +5,22 @@
  *
  * Authors: Adrian
  *          Dolphin_Oracle
- *          MX Linux <http://mxlinux.org>
+ *          MX Linux <http://snakeos.de>
  *
- * This file is part of mx-packageinstaller.
+ * This file is part of snake-store.
  *
- * mx-packageinstaller is free software: you can redistribute it and/or modify
+ * snake-store is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * mx-packageinstaller is distributed in the hope that it will be useful,
+ * snake-store is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with mx-packageinstaller.  If not, see <http://www.gnu.org/licenses/>.
+ * along with snake-store.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 
 #include "mainwindow.h"
@@ -69,7 +69,7 @@ QString sanitizeOutputForDisplay(const QString &output)
 MainWindow::MainWindow(const QCommandLineParser &argParser, QWidget *parent)
     : QDialog(parent),
       ui(new Ui::MainWindow),
-      dictionary("/usr/share/mx-packageinstaller-pkglist/category.dict", QSettings::IniFormat),
+      dictionary("/usr/share/snake-store-pkglist/category.dict", QSettings::IniFormat),
       args {argParser},
       reply(nullptr)
 {
@@ -148,7 +148,7 @@ MainWindow::MainWindow(const QCommandLineParser &argParser, QWidget *parent)
     // Run flatpak setup and display in a separate thread
     if (arch != QLatin1String("i386") && checkInstalled(QStringLiteral("flatpak"))) {
         auto flatpakFuture [[maybe_unused]] = QtConcurrent::run([this] {
-            Cmd().run(elevate + "/usr/lib/mx-packageinstaller/mxpi-lib flatpak_add_repos", Cmd::QuietMode::Yes);
+            Cmd().run(elevate + "/usr/lib/snake-store/mxpi-lib flatpak_add_repos", Cmd::QuietMode::Yes);
             QMetaObject::invokeMethod(this, [this] { displayFlatpaks(); }, Qt::QueuedConnection);
         });
     }
@@ -189,7 +189,7 @@ void MainWindow::setup()
     testInitiallyEnabled
         = cmd.run("apt-get update --print-uris | grep -m1 -qE '/mx/testrepo/dists/" + verName + "/test/'");
 
-    setWindowTitle(tr("MX Package Installer"));
+    setWindowTitle(tr("Snake Store"));
 
     // Load icons FIRST, before models need them
     setIcons();
@@ -426,7 +426,7 @@ bool MainWindow::updateApt()
     }
 
     enableOutput();
-    if (cmd.run(elevate + "/usr/lib/mx-packageinstaller/mxpi-lib apt_update", Cmd::QuietMode::Yes)) {
+    if (cmd.run(elevate + "/usr/lib/snake-store/mxpi-lib apt_update", Cmd::QuietMode::Yes)) {
         qDebug() << "sources updated OK";
         updatedOnce = true;
         return true;
@@ -435,7 +435,7 @@ bool MainWindow::updateApt()
     QMessageBox::critical(this, tr("Error"),
                           tr("There was a problem updating sources. Some sources may not have "
                              "provided updates. For more info check: ")
-                              + "<a href=\"/var/log/mxpi.log\">/var/log/mxpi.log</a>");
+                              + "<a href=\"/var/log/snake-store.log\">/var/log/snake-store.log</a>");
     return false;
 }
 
@@ -796,7 +796,7 @@ void MainWindow::loadPmFiles()
 {
     qDebug() << "+++" << __PRETTY_FUNCTION__ << "+++";
 
-    const QString pmFolderPath {QStringLiteral("/usr/share/mx-packageinstaller-pkglist")};
+    const QString pmFolderPath {QStringLiteral("/usr/share/snake-store-pkglist")};
     const QStringList pmFileList = QDir(pmFolderPath).entryList({"*.pm"});
 
     for (const QString &fileName : pmFileList) {
@@ -1730,7 +1730,7 @@ void MainWindow::listFlatpakRemotes() const
 
     auto addUserRemotes = []() {
         Cmd addRemotes;
-        return addRemotes.run("/usr/lib/mx-packageinstaller/mxpi-lib flatpak_add_repos_user", Cmd::QuietMode::Yes);
+        return addRemotes.run("/usr/lib/snake-store/mxpi-lib flatpak_add_repos_user", Cmd::QuietMode::Yes);
     };
 
     QStringList list;
@@ -1994,7 +1994,7 @@ bool MainWindow::installPopularApp(const QString &name)
         }
         if (!cmd.runAsRoot(preinstall)) {
             if (QFile::exists(tempList)) {
-                Cmd().run(elevate + "/usr/lib/mx-packageinstaller/mxpi-lib cleanup_temp", Cmd::QuietMode::Yes);
+                Cmd().run(elevate + "/usr/lib/snake-store/mxpi-lib cleanup_temp", Cmd::QuietMode::Yes);
                 updateApt();
             }
             return false;
@@ -2016,7 +2016,7 @@ bool MainWindow::installPopularApp(const QString &name)
         cmd.runAsRoot(postinstall);
     }
     if (QFile::exists(tempList)) {
-        Cmd().run(elevate + "/usr/lib/mx-packageinstaller/mxpi-lib cleanup_temp", Cmd::QuietMode::Yes);
+        Cmd().run(elevate + "/usr/lib/snake-store/mxpi-lib cleanup_temp", Cmd::QuietMode::Yes);
         updateApt();
     }
     return result;
@@ -2110,7 +2110,7 @@ bool MainWindow::installSelected()
     bool result = install(names);
     if (currentTree == ui->treeBackports || currentTree == ui->treeMXtest) {
         if (QFile::exists(tempList)) {
-            Cmd().run(elevate + "/usr/lib/mx-packageinstaller/mxpi-lib cleanup_temp", Cmd::QuietMode::Yes);
+            Cmd().run(elevate + "/usr/lib/snake-store/mxpi-lib cleanup_temp", Cmd::QuietMode::Yes);
             updateApt();
         }
     }
@@ -2540,10 +2540,10 @@ void MainWindow::cleanup()
         qDebug() << "Command" << cmd.program() << cmd.arguments() << "terminated" << cmd.terminateAndKill();
     }
     if (QFile::exists(tempList)) {
-        Cmd().run(elevate + "/usr/lib/mx-packageinstaller/mxpi-lib cleanup_temp", Cmd::QuietMode::Yes);
+        Cmd().run(elevate + "/usr/lib/snake-store/mxpi-lib cleanup_temp", Cmd::QuietMode::Yes);
         updateApt();
     }
-    Cmd().run(elevate + "/usr/lib/mx-packageinstaller/mxpi-lib copy_log", Cmd::QuietMode::Yes);
+    Cmd().run(elevate + "/usr/lib/snake-store/mxpi-lib copy_log", Cmd::QuietMode::Yes);
     settings.setValue("geometry", saveGeometry());
     settings.setValue("FlatpakRemote", ui->comboRemote->currentText());
     settings.setValue("FlatpakUser", ui->comboUser->currentText());
@@ -3352,19 +3352,19 @@ void MainWindow::pushAbout_clicked()
         "<p align=\"center\"><b><h2>" + windowTitle() + "</h2></b></p><p align=\"center\">" + tr("Version: ")
             + QCoreApplication::applicationVersion() + "</p><p align=\"center\"><h3>"
             + tr("Package Installer for MX Linux")
-            + R"(</h3></p><p align="center"><a href="http://mxlinux.org">http://mxlinux.org</a><br /></p><p align="center">)"
+            + R"(</h3></p><p align="center"><a href="http://snakeos.de">http://snakeos.de</a><br /></p><p align="center">)"
             + tr("Copyright (c) MX Linux") + "<br /><br /></p>",
-        "/usr/share/doc/mx-packageinstaller/license.html", tr("%1 License").arg(windowTitle()));
+        "/usr/share/doc/snake-store/license.html", tr("%1 License").arg(windowTitle()));
     show();
 }
 
 void MainWindow::pushHelp_clicked()
 {
     QString lang = locale.bcp47Name();
-    QString url {QStringLiteral("/usr/share/doc/mx-packageinstaller/mx-package-installer.html")};
+    QString url {QStringLiteral("/usr/share/doc/snake-store/snake-store.html")};
 
     if (lang.startsWith(QLatin1String("fr"))) {
-        url = QStringLiteral("https://mxlinux.org/wiki/help-files/help-mx-installateur-de-paquets");
+        url = QStringLiteral("https://snakeos.de/help");
     }
     displayDoc(url, tr("%1 Help").arg(windowTitle()));
 }
@@ -3796,7 +3796,7 @@ void MainWindow::installFlatpak()
         currentTree->blockSignals(false);
         return;
     }
-    Cmd().run(elevate + "/usr/lib/mx-packageinstaller/mxpi-lib flatpak_add_repos", Cmd::QuietMode::Yes);
+    Cmd().run(elevate + "/usr/lib/snake-store/mxpi-lib flatpak_add_repos", Cmd::QuietMode::Yes);
     enableOutput();
     invalidateFlatpakRemoteCache();
     listFlatpakRemotes();
@@ -4297,7 +4297,7 @@ void MainWindow::pushCancel_clicked()
     if (cmd.state() != QProcess::NotRunning) {
         if (QMessageBox::warning(this, tr("Quit?"),
                                  tr("Process still running, quitting might leave the system in an unstable "
-                                    "state.<p><b>Are you sure you want to exit MX Package Installer?</b>"),
+                                    "state.<p><b>Are you sure you want to exit Snake Store?</b>"),
                                  QMessageBox::Yes, QMessageBox::No)
             == QMessageBox::No) {
             return;
@@ -4404,7 +4404,7 @@ void MainWindow::comboUser_currentIndexChanged(int index)
         if (!updated) {
             setCursor(QCursor(Qt::BusyCursor));
             enableOutput();
-            Cmd().run("/usr/lib/mx-packageinstaller/mxpi-lib flatpak_add_repos_user", Cmd::QuietMode::Yes);
+            Cmd().run("/usr/lib/snake-store/mxpi-lib flatpak_add_repos_user", Cmd::QuietMode::Yes);
             setCursor(QCursor(Qt::ArrowCursor));
             updated = true;
         }

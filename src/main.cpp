@@ -7,20 +7,20 @@
  *          Dolphin_Oracle
  *          MX Linux <http://mxlinux.org>
  *
- * This file is part of mx-packageinstaller.
+ * This file is part of snake-store.
  *
- * mx-packageinstaller is free software: you can redistribute it and/or modify
+ * snake-store is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * mx-packageinstaller is distributed in the hope that it will be useful,
+ * snake-store is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with mx-packageinstaller.  If not, see <http://www.gnu.org/licenses/>.
+ * along with snake-store.  If not, see <http://www.gnu.org/licenses/>.
  **********************************************************************/
 #include "lockfile.h"
 
@@ -63,10 +63,10 @@ int main(int argc, char *argv[])
     }
     qputenv("TERM", "dumb");
 
-    QApplication::setApplicationName("mx-packageinstaller");
+    QApplication::setApplicationName("snake-store");
 
     QApplication::setWindowIcon(QIcon::fromTheme(QApplication::applicationName()));
-    QApplication::setOrganizationName("MX-Linux");
+    QApplication::setOrganizationName("SnakeOS");
     QApplication::setApplicationVersion(VERSION);
 
     QTranslator qtTran;
@@ -87,7 +87,7 @@ int main(int argc, char *argv[])
 
     QCommandLineParser parser;
     parser.setApplicationDescription(
-        QObject::tr("MX Package Installer is a tool used for managing packages on MX Linux\n\
+        QObject::tr("Snake Store is a tool used for managing packages on MX Linux\n\
     - installs popular programs from different sources\n\
     - installs programs from the MX Test repo\n\
     - installs programs from Debian Backports repo\n\

@@ -15,7 +15,7 @@
 Cmd::Cmd(QObject *parent)
     : QProcess(parent),
       elevate {elevationTool()},
-      helper {"/usr/lib/mx-packageinstaller/helper"}
+      helper {"/usr/lib/snake-store/helper"}
 {
     connect(this, &Cmd::readyReadStandardOutput, [this] { emit outputAvailable(readAllStandardOutput()); });
     connect(this, &Cmd::readyReadStandardError, [this] { emit errorAvailable(readAllStandardError()); });

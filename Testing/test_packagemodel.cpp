@@ -350,7 +350,7 @@ void TestPackageModel::testUpdateInstalledVersions()
     QVector<PackageData> packages = createTestPackages();
 
     PackageData pkg4;
-    pkg4.name = "mx-packageinstaller";
+    pkg4.name = "snake-store";
     pkg4.repoVersion = "26.01";
     pkg4.installedVersion = "26.01.2";
     pkg4.description = "MX Package Installer";
@@ -359,11 +359,11 @@ void TestPackageModel::testUpdateInstalledVersions()
 
     model.setPackageData(packages);
 
-    // Update versions - vim is older, gimp is installed, mx-packageinstaller is newer than repo
+    // Update versions - vim is older, gimp is installed, snake-store is newer than repo
     QHash<QString, QString> versions;
     versions["vim"] = "8.2.0-1";  // Older than repo -> upgradable
     versions["gimp"] = "2.10.0-1";  // Now installed
-    versions["mx-packageinstaller"] = "26.01.2";  // Newer than repo -> not upgradable
+    versions["snake-store"] = "26.01.2";  // Newer than repo -> not upgradable
     // firefox is removed from the hash, simulating uninstallation
 
     model.updateInstalledVersions(versions);

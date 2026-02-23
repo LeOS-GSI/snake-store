@@ -1,6 +1,6 @@
-# Tests CMakeLists.txt for mx-packageinstaller
+# Tests CMakeLists.txt for snake-store
 cmake_minimum_required(VERSION 3.16)
-project(mx-packageinstaller-tests)
+project(snake-store-tests)
 
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 20)

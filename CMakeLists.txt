@@ -5,20 +5,20 @@
 # *          Dolphin_Oracle
 # *          MX Linux <http://mxlinux.org>
 # *
-# * This file is part of mx-packageinstaller.
+# * This file is part of snake-store.
 # *
-# * mx-packageinstaller is free software: you can redistribute it and/or modify
+# * snake-store is free software: you can redistribute it and/or modify
 # * it under the terms of the GNU General Public License as published by
 # * the Free Software Foundation, either version 3 of the License, or
 # * (at your option) any later version.
 # *
-# * mx-packageinstaller is distributed in the hope that it will be useful,
+# * snake-store is distributed in the hope that it will be useful,
 # * but WITHOUT ANY WARRANTY; without even the implied warranty of
 # * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 # * GNU General Public License for more details.
 # *
 # * You should have received a copy of the GNU General Public License
-# * along with mx-packageinstaller.  If not, see <http://www.gnu.org/licenses/>.
+# * along with snake-store.  If not, see <http://www.gnu.org/licenses/>.
 # **********************************************************************/
 
 cmake_minimum_required(VERSION 3.16)
@@ -54,9 +54,9 @@ else()
     message(WARNING "dpkg-parsechangelog not found; defaulting to ${PROJECT_VERSION_FROM_CHANGELOG}")
 endif()
 
-project(mx-packageinstaller
+project(snake-store
     VERSION ${PROJECT_VERSION_FROM_CHANGELOG}
-    DESCRIPTION "MX Package Installer - A tool for managing packages on MX Linux"
+    DESCRIPTION "Snake Store - A tool for managing packages on SnakeOS"
     LANGUAGES CXX
 )
 
@@ -145,7 +145,7 @@ set(RESOURCE_FILES
 file(GLOB TRANSLATION_FILES "translations/*.ts")
 
 # Create the executable
-add_executable(mx-packageinstaller
+add_executable(snake-store
     ${SOURCES}
     ${HEADERS}
     ${UI_FILES}
@@ -153,7 +153,7 @@ add_executable(mx-packageinstaller
 )
 
 # Link Qt6 libraries
-target_link_libraries(mx-packageinstaller
+target_link_libraries(snake-store
     Qt6::Core
     Qt6::Gui
     Qt6::Widgets
@@ -162,7 +162,7 @@ target_link_libraries(mx-packageinstaller
 )
 
 # Set compiler flags
-target_compile_options(mx-packageinstaller PRIVATE
+target_compile_options(snake-store PRIVATE
     -Wpedantic
     -pedantic
     -Werror=return-type
@@ -173,9 +173,9 @@ target_compile_options(mx-packageinstaller PRIVATE
 
 # Add compiler-specific flags
 if(CMAKE_CXX_COMPILER_ID STREQUAL "Clang" OR USE_CLANG)
-    target_compile_options(mx-packageinstaller PRIVATE -Werror=return-stack-address)
+    target_compile_options(snake-store PRIVATE -Werror=return-stack-address)
 else()
-    target_compile_options(mx-packageinstaller PRIVATE
+    target_compile_options(snake-store PRIVATE
         -Werror=return-local-addr
         # Suppress false positive LTO warnings with Qt6 QHash (GCC only)
         -Wno-alloc-size-larger-than
@@ -183,7 +183,7 @@ else()
 endif()
 
 # Set compile definitions
-target_compile_definitions(mx-packageinstaller PRIVATE
+target_compile_definitions(snake-store PRIVATE
     QT_DEPRECATED_WARNINGS
     QT_DISABLE_DEPRECATED_BEFORE=0x060000
     VERSION="${PROJECT_VERSION}"
@@ -191,16 +191,16 @@ target_compile_definitions(mx-packageinstaller PRIVATE
 
 # Release-specific optimizations
 if(CMAKE_BUILD_TYPE STREQUAL "Release")
-    target_compile_definitions(mx-packageinstaller PRIVATE NDEBUG)
-    target_compile_options(mx-packageinstaller PRIVATE -O3)
+    target_compile_definitions(snake-store PRIVATE NDEBUG)
+    target_compile_options(snake-store PRIVATE -O3)
 
     # Add LTO - different flags for different compilers
     if(CMAKE_CXX_COMPILER_ID STREQUAL "Clang" OR USE_CLANG)
-        target_compile_options(mx-packageinstaller PRIVATE -flto=thin)
-        target_link_options(mx-packageinstaller PRIVATE -flto=thin)
+        target_compile_options(snake-store PRIVATE -flto=thin)
+        target_link_options(snake-store PRIVATE -flto=thin)
     else()
-        target_compile_options(mx-packageinstaller PRIVATE -flto=auto)
-        target_link_options(mx-packageinstaller PRIVATE
+        target_compile_options(snake-store PRIVATE -flto=auto)
+        target_link_options(snake-store PRIVATE
             -flto=auto
             # Suppress false positive LTO warnings with Qt6 QHash at link time (GCC only)
             -Wno-alloc-size-larger-than
@@ -209,21 +209,21 @@ if(CMAKE_BUILD_TYPE STREQUAL "Release")
 endif()
 
 # Handle translations
-qt6_add_translations(mx-packageinstaller
+qt6_add_translations(snake-store
     TS_FILES ${TRANSLATION_FILES}
     LRELEASE_OPTIONS -compress -nounfinished -removeidentical -silent
     QM_FILES_OUTPUT_VARIABLE qm_files
 )
 
 # Set target properties
-set_target_properties(mx-packageinstaller PROPERTIES
-    OUTPUT_NAME "mx-packageinstaller"
+set_target_properties(snake-store PROPERTIES
+    OUTPUT_NAME "snake-store"
     RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}
 )
 
 # Install target (required by Debian build system)
 # Other files are handled by debian/install
-install(TARGETS mx-packageinstaller
+install(TARGETS snake-store
     RUNTIME DESTINATION bin
 )
 
