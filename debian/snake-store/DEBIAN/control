@@ -1,0 +1,18 @@
+Package: snake-store
+Version: 25.08.01
+Architecture: amd64
+Maintainer: Harvey186 <harvey186@hotmail.com>
+Installed-Size: 1641
+Depends: aptitude, snake-store-pkglist (>= 17.4), xdg-utils, sudo | pkexec | gksu, socat, libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libqt6core6 (>= 6.2.0), libqt6gui6 (>= 6.1.2), libqt6network6 (>= 6.1.2), libqt6widgets6 (>= 6.1.2), libqt6xml6 (>= 6.1.2), libstdc++6 (>= 11)
+Recommends: flatpak (<< 1.0) | xdg-desktop-portal-gtk, flatpak (>= 0.8.9)
+Section: admin
+Priority: optional
+Homepage: http://SnakeOS.de
+Description: Package installation tool for SnakeOS
+ Snake Store is a graphical utility that allows users to easily
+ install and manage software packages on SnakeOS. It provides a user-friendly
+ interface for:
+  * Installing None US applications from various repositories
+  * Installing software from Debian Backports
+  * Installing and managing Flatpak applications
+  * Simplifying package management without requiring command line knowledge

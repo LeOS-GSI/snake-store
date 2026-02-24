@@ -1,0 +1,24 @@
+{
+	"BUILD_DIR" : "/home/ich/src/SnakeOS/snake-store/obj-x86_64-linux-gnu/snake-store_autogen",
+	"CMAKE_BINARY_DIR" : "/home/ich/src/SnakeOS/snake-store/obj-x86_64-linux-gnu",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/ich/src/SnakeOS/snake-store/obj-x86_64-linux-gnu",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/ich/src/SnakeOS/snake-store",
+	"CMAKE_SOURCE_DIR" : "/home/ich/src/SnakeOS/snake-store",
+	"INCLUDE_DIR" : "/home/ich/src/SnakeOS/snake-store/obj-x86_64-linux-gnu/snake-store_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/ich/src/SnakeOS/snake-store/icons/package-installed-outdated.png",
+		"/home/ich/src/SnakeOS/snake-store/icons/package-installed-updated.png",
+		"/home/ich/src/SnakeOS/snake-store/icons/logo.svg"
+	],
+	"LOCK_FILE" : "/home/ich/src/SnakeOS/snake-store/obj-x86_64-linux-gnu/CMakeFiles/snake-store_autogen.dir/AutoRcc_images_UVLADIE3JM_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "images" ],
+	"OUTPUT_CHECKSUM" : "UVLADIE3JM",
+	"OUTPUT_NAME" : "qrc_images.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt6/libexec/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/ich/src/SnakeOS/snake-store/obj-x86_64-linux-gnu/CMakeFiles/snake-store_autogen.dir/AutoRcc_images_UVLADIE3JM_Used.txt",
+	"SOURCE" : "/home/ich/src/SnakeOS/snake-store/src/images.qrc",
+	"VERBOSITY" : 0
+}
