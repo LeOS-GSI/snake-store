@@ -15,7 +15,7 @@ The CXX compiler identification is GNU, found in "/home/ich/src/SnakeOS/snake-st
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/ich/src/SnakeOS/snake-store/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/media/ich/exSSD3/webview/depot_tools/ninja cmTC_a5469 && [1/2] Building CXX object CMakeFiles/cmTC_a5469.dir/CMakeCXXCompilerABI.cpp.o
+Run Build Command(s):/media/ich/exSSD3/webview/depot_tools/ninja cmTC_f20d0 && [1/2] Building CXX object CMakeFiles/cmTC_f20d0.dir/CMakeCXXCompilerABI.cpp.o
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -25,8 +25,8 @@ Configured with: ../src/configure -v --with-pkgversion='Ubuntu 12.3.0-1ubuntu1~2
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
 gcc version 12.3.0 (Ubuntu 12.3.0-1ubuntu1~22.04.2) 
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-flto=auto' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-Wformat=1' '-Wdate-time' '-v' '-D' '_FORTIFY_SOURCE=2' '-c' '-o' 'CMakeFiles/cmTC_a5469.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a5469.dir/'
- /usr/lib/gcc/x86_64-linux-gnu/12/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D _FORTIFY_SOURCE=2 /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a5469.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -g -O2 -Wformat=1 -Wdate-time -version -fdiagnostics-color=always -ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=. -flto=auto -flto=auto -ffat-lto-objects -fstack-protector-strong -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccALwCEX.s
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-flto=auto' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-Wformat=1' '-Wdate-time' '-v' '-D' '_FORTIFY_SOURCE=2' '-c' '-o' 'CMakeFiles/cmTC_f20d0.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f20d0.dir/'
+ /usr/lib/gcc/x86_64-linux-gnu/12/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D _FORTIFY_SOURCE=2 /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f20d0.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -g -O2 -Wformat=1 -Wdate-time -version -fdiagnostics-color=always -ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=. -flto=auto -flto=auto -ffat-lto-objects -fstack-protector-strong -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccNvY58B.s
 GNU C++17 (Ubuntu 12.3.0-1ubuntu1~22.04.2) version 12.3.0 (x86_64-linux-gnu)
 	compiled by GNU C version 12.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
 
@@ -50,13 +50,13 @@ GNU C++17 (Ubuntu 12.3.0-1ubuntu1~22.04.2) version 12.3.0 (x86_64-linux-gnu)
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 Compiler executable checksum: 0d370165627a7e26039599c56dc32a7a
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-flto=auto' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-Wformat=1' '-Wdate-time' '-v' '-D' '_FORTIFY_SOURCE=2' '-c' '-o' 'CMakeFiles/cmTC_a5469.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a5469.dir/'
- as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_a5469.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccALwCEX.s
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-flto=auto' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-Wformat=1' '-Wdate-time' '-v' '-D' '_FORTIFY_SOURCE=2' '-c' '-o' 'CMakeFiles/cmTC_f20d0.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f20d0.dir/'
+ as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_f20d0.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccNvY58B.s
 GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-flto=auto' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-Wformat=1' '-Wdate-time' '-v' '-D' '_FORTIFY_SOURCE=2' '-c' '-o' 'CMakeFiles/cmTC_a5469.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a5469.dir/CMakeCXXCompilerABI.cpp.'
-[2/2] Linking CXX executable cmTC_a5469
+COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-flto=auto' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-Wformat=1' '-Wdate-time' '-v' '-D' '_FORTIFY_SOURCE=2' '-c' '-o' 'CMakeFiles/cmTC_f20d0.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f20d0.dir/CMakeCXXCompilerABI.cpp.'
+[2/2] Linking CXX executable cmTC_f20d0
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper
@@ -69,12 +69,12 @@ Supported LTO compression algorithms: zlib zstd
 gcc version 12.3.0 (Ubuntu 12.3.0-1ubuntu1~22.04.2) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-flto=auto' '-flto=auto' '-fstack-protector-strong' '-Wformat=1' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-flto=auto' '-ffat-lto-objects' '-flto=auto' '-v' '-o' 'cmTC_a5469' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a5469.'
- /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPC5SV4.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -flto=auto -flto=auto -flto=auto -flto=auto --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a5469 /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. -Bsymbolic-functions -z relro CMakeFiles/cmTC_a5469.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o
-/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -fresolution=/tmp/ccPC5SV4.res -flinker-output=pie CMakeFiles/cmTC_a5469.dir/CMakeCXXCompilerABI.cpp.o 
-/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -fresolution=/tmp/ccPC5SV4.res -flinker-output=pie CMakeFiles/cmTC_a5469.dir/CMakeCXXCompilerABI.cpp.o 
+COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-flto=auto' '-flto=auto' '-fstack-protector-strong' '-Wformat=1' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-flto=auto' '-ffat-lto-objects' '-flto=auto' '-v' '-o' 'cmTC_f20d0' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f20d0.'
+ /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMjpSB3.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -flto=auto -flto=auto -flto=auto -flto=auto --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f20d0 /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. -Bsymbolic-functions -z relro CMakeFiles/cmTC_f20d0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o
+/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -fresolution=/tmp/ccMjpSB3.res -flinker-output=pie CMakeFiles/cmTC_f20d0.dir/CMakeCXXCompilerABI.cpp.o 
+/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -fresolution=/tmp/ccMjpSB3.res -flinker-output=pie CMakeFiles/cmTC_f20d0.dir/CMakeCXXCompilerABI.cpp.o 
 LTO parallelism level set to 24
-/usr/bin/c++ @/tmp/ccclM9Fd
+/usr/bin/c++ @/tmp/cc3mrYpY
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -84,8 +84,8 @@ Configured with: ../src/configure -v --with-pkgversion='Ubuntu 12.3.0-1ubuntu1~2
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
 gcc version 12.3.0 (Ubuntu 12.3.0-1ubuntu1~22.04.2) 
-COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIC' '-g' '-O2' '-fcf-protection=full' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-fstack-protector-strong' '-ffat-lto-objects' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'   '-fltrans-output-list=/tmp/ccIrtsl9.ltrans.out' '-fwpa=24' '-fresolution=/tmp/ccPC5SV4.res' '-flinker-output=pie' '-shared-libgcc'
- /usr/lib/gcc/x86_64-linux-gnu/12/lto1 -quiet -dumpbase ./cmTC_a5469.wpa -mtune=generic -march=x86-64 -g -g -O2 -O2 -version -fno-openmp -fno-openacc -fPIC -fcf-protection=full -ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=. -fstack-protector-strong -ffat-lto-objects -fltrans-output-list=/tmp/ccIrtsl9.ltrans.out -fwpa=24 -fresolution=/tmp/ccPC5SV4.res -flinker-output=pie @/tmp/ccdQ388Q
+COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIC' '-g' '-O2' '-fcf-protection=full' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-fstack-protector-strong' '-ffat-lto-objects' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'   '-fltrans-output-list=/tmp/cc3BcJQw.ltrans.out' '-fwpa=24' '-fresolution=/tmp/ccMjpSB3.res' '-flinker-output=pie' '-shared-libgcc'
+ /usr/lib/gcc/x86_64-linux-gnu/12/lto1 -quiet -dumpbase ./cmTC_f20d0.wpa -mtune=generic -march=x86-64 -g -g -O2 -O2 -version -fno-openmp -fno-openacc -fPIC -fcf-protection=full -ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=. -fstack-protector-strong -ffat-lto-objects -fltrans-output-list=/tmp/cc3BcJQw.ltrans.out -fwpa=24 -fresolution=/tmp/ccMjpSB3.res -flinker-output=pie @/tmp/ccvr3vQA
 GNU GIMPLE (Ubuntu 12.3.0-1ubuntu1~22.04.2) version 12.3.0 (x86_64-linux-gnu)
 	compiled by GNU C version 12.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
 
@@ -96,8 +96,8 @@ GNU GIMPLE (Ubuntu 12.3.0-1ubuntu1~22.04.2) version 12.3.0 (x86_64-linux-gnu)
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/../lib/:/lib/../lib/x86_64-linux-gnu/:/lib/../lib/../lib/:/usr/lib/../lib/x86_64-linux-gnu/:/usr/lib/../lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIC' '-g' '-O2' '-fcf-protection=full' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-fstack-protector-strong' '-ffat-lto-objects' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'   '-fltrans-output-list=/tmp/ccIrtsl9.ltrans.out' '-fwpa=24' '-fresolution=/tmp/ccPC5SV4.res' '-flinker-output=pie' '-shared-libgcc' '-dumpdir' './cmTC_a5469.wpa.'
-make -f /tmp/cc4Si0t9.mk -j24 all
+COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIC' '-g' '-O2' '-fcf-protection=full' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-fstack-protector-strong' '-ffat-lto-objects' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'   '-fltrans-output-list=/tmp/cc3BcJQw.ltrans.out' '-fwpa=24' '-fresolution=/tmp/ccMjpSB3.res' '-flinker-output=pie' '-shared-libgcc' '-dumpdir' './cmTC_f20d0.wpa.'
+make -f /tmp/ccWxkPe1.mk -j24 all
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -107,8 +107,8 @@ Configured with: ../src/configure -v --with-pkgversion='Ubuntu 12.3.0-1ubuntu1~2
 Thread model: posix
 Supported LTO compression algorithms: zlib zstd
 gcc version 12.3.0 (Ubuntu 12.3.0-1ubuntu1~22.04.2) 
-COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIC' '-g' '-O2' '-fcf-protection=full' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-fstack-protector-strong' '-ffat-lto-objects' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'   '-fltrans' '-o' '/tmp/ccIrtsl9.ltrans0.ltrans.o' '-shared-libgcc'
- /usr/lib/gcc/x86_64-linux-gnu/12/lto1 -quiet -dumpbase ./cmTC_a5469.ltrans0.ltrans -mtune=generic -march=x86-64 -g -g -O2 -O2 -version -fno-openmp -fno-openacc -fPIC -fcf-protection=full -ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=. -fstack-protector-strong -ffat-lto-objects -fltrans /tmp/ccIrtsl9.ltrans0.o -o /tmp/ccIExPBA.s
+COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIC' '-g' '-O2' '-fcf-protection=full' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-fstack-protector-strong' '-ffat-lto-objects' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'   '-fltrans' '-o' '/tmp/cc3BcJQw.ltrans0.ltrans.o' '-shared-libgcc'
+ /usr/lib/gcc/x86_64-linux-gnu/12/lto1 -quiet -dumpbase ./cmTC_f20d0.ltrans0.ltrans -mtune=generic -march=x86-64 -g -g -O2 -O2 -version -fno-openmp -fno-openacc -fPIC -fcf-protection=full -ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=. -fstack-protector-strong -ffat-lto-objects -fltrans /tmp/cc3BcJQw.ltrans0.o -o /tmp/cceROcWT.s
 GNU GIMPLE (Ubuntu 12.3.0-1ubuntu1~22.04.2) version 12.3.0 (x86_64-linux-gnu)
 	compiled by GNU C version 12.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
 
@@ -117,14 +117,14 @@ GNU GIMPLE (Ubuntu 12.3.0-1ubuntu1~22.04.2) version 12.3.0 (x86_64-linux-gnu)
 	compiled by GNU C version 12.3.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
 
 GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIC' '-g' '-O2' '-fcf-protection=full' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-fstack-protector-strong' '-ffat-lto-objects' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'   '-fltrans' '-o' '/tmp/ccIrtsl9.ltrans0.ltrans.o' '-shared-libgcc'
- as -v --gdwarf-5 --64 -o /tmp/ccIrtsl9.ltrans0.ltrans.o /tmp/ccIExPBA.s
+COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIC' '-g' '-O2' '-fcf-protection=full' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-fstack-protector-strong' '-ffat-lto-objects' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'   '-fltrans' '-o' '/tmp/cc3BcJQw.ltrans0.ltrans.o' '-shared-libgcc'
+ as -v --gdwarf-5 --64 -o /tmp/cc3BcJQw.ltrans0.ltrans.o /tmp/cceROcWT.s
 GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
 MAKEFLAGS=w -j24 
 COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/../lib/:/lib/../lib/x86_64-linux-gnu/:/lib/../lib/../lib/:/usr/lib/../lib/x86_64-linux-gnu/:/usr/lib/../lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIC' '-g' '-O2' '-fcf-protection=full' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-fstack-protector-strong' '-ffat-lto-objects' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'   '-fltrans' '-o' '/tmp/ccIrtsl9.ltrans0.ltrans.o' '-shared-libgcc' '-dumpdir' './cmTC_a5469.ltrans0.ltrans.'
-COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-flto=auto' '-flto=auto' '-fstack-protector-strong' '-Wformat=1' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-flto=auto' '-ffat-lto-objects' '-flto=auto' '-v' '-o' 'cmTC_a5469' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a5469.'
+COLLECT_GCC_OPTIONS='-c' '-fno-openmp' '-fno-openacc' '-fPIC' '-g' '-O2' '-fcf-protection=full' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-fstack-protector-strong' '-ffat-lto-objects' '-v' '-shared-libgcc' '-mtune=generic' '-march=x86-64'   '-fltrans' '-o' '/tmp/cc3BcJQw.ltrans0.ltrans.o' '-shared-libgcc' '-dumpdir' './cmTC_f20d0.ltrans0.ltrans.'
+COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-flto=auto' '-flto=auto' '-fstack-protector-strong' '-Wformat=1' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-flto=auto' '-ffat-lto-objects' '-flto=auto' '-v' '-o' 'cmTC_f20d0' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f20d0.'
 
 
 
@@ -153,7 +153,7 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/ich/src/SnakeOS/snake-store/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/media/ich/exSSD3/webview/depot_tools/ninja cmTC_a5469 && [1/2] Building CXX object CMakeFiles/cmTC_a5469.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [Run Build Command(s):/media/ich/exSSD3/webview/depot_tools/ninja cmTC_f20d0 && [1/2] Building CXX object CMakeFiles/cmTC_f20d0.dir/CMakeCXXCompilerABI.cpp.o]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -163,8 +163,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [Thread model: posix]
   ignore line: [Supported LTO compression algorithms: zlib zstd]
   ignore line: [gcc version 12.3.0 (Ubuntu 12.3.0-1ubuntu1~22.04.2) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-flto=auto' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-Wformat=1' '-Wdate-time' '-v' '-D' '_FORTIFY_SOURCE=2' '-c' '-o' 'CMakeFiles/cmTC_a5469.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a5469.dir/']
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/12/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D _FORTIFY_SOURCE=2 /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_a5469.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -g -O2 -Wformat=1 -Wdate-time -version -fdiagnostics-color=always -ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=. -flto=auto -flto=auto -ffat-lto-objects -fstack-protector-strong -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccALwCEX.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-flto=auto' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-Wformat=1' '-Wdate-time' '-v' '-D' '_FORTIFY_SOURCE=2' '-c' '-o' 'CMakeFiles/cmTC_f20d0.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f20d0.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/12/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D _FORTIFY_SOURCE=2 /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f20d0.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -g -O2 -Wformat=1 -Wdate-time -version -fdiagnostics-color=always -ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=. -flto=auto -flto=auto -ffat-lto-objects -fstack-protector-strong -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccNvY58B.s]
   ignore line: [GNU C++17 (Ubuntu 12.3.0-1ubuntu1~22.04.2) version 12.3.0 (x86_64-linux-gnu)]
   ignore line: [	compiled by GNU C version 12.3.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
   ignore line: []
@@ -188,13 +188,13 @@ Parsed CXX implicit link information from above output:
   ignore line: []
   ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
   ignore line: [Compiler executable checksum: 0d370165627a7e26039599c56dc32a7a]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-flto=auto' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-Wformat=1' '-Wdate-time' '-v' '-D' '_FORTIFY_SOURCE=2' '-c' '-o' 'CMakeFiles/cmTC_a5469.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a5469.dir/']
-  ignore line: [ as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_a5469.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccALwCEX.s]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-flto=auto' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-Wformat=1' '-Wdate-time' '-v' '-D' '_FORTIFY_SOURCE=2' '-c' '-o' 'CMakeFiles/cmTC_f20d0.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f20d0.dir/']
+  ignore line: [ as -v --gdwarf-5 --64 -o CMakeFiles/cmTC_f20d0.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccNvY58B.s]
   ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-flto=auto' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-Wformat=1' '-Wdate-time' '-v' '-D' '_FORTIFY_SOURCE=2' '-c' '-o' 'CMakeFiles/cmTC_a5469.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a5469.dir/CMakeCXXCompilerABI.cpp.']
-  ignore line: [[2/2] Linking CXX executable cmTC_a5469]
+  ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-flto=auto' '-flto=auto' '-ffat-lto-objects' '-fstack-protector-strong' '-Wformat=1' '-Wdate-time' '-v' '-D' '_FORTIFY_SOURCE=2' '-c' '-o' 'CMakeFiles/cmTC_f20d0.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f20d0.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [[2/2] Linking CXX executable cmTC_f20d0]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper]
@@ -207,13 +207,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [gcc version 12.3.0 (Ubuntu 12.3.0-1ubuntu1~22.04.2) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/12/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/12/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-flto=auto' '-flto=auto' '-fstack-protector-strong' '-Wformat=1' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-flto=auto' '-ffat-lto-objects' '-flto=auto' '-v' '-o' 'cmTC_a5469' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a5469.']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccPC5SV4.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -flto=auto -flto=auto -flto=auto -flto=auto --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_a5469 /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. -Bsymbolic-functions -z relro CMakeFiles/cmTC_a5469.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-g' '-O2' '-ffile-prefix-map=/home/ich/src/SnakeOS/snake-store=.' '-flto=auto' '-flto=auto' '-fstack-protector-strong' '-Wformat=1' '-Wdate-time' '-D' '_FORTIFY_SOURCE=2' '-flto=auto' '-ffat-lto-objects' '-flto=auto' '-v' '-o' 'cmTC_f20d0' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f20d0.']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/12/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMjpSB3.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -flto=auto -flto=auto -flto=auto -flto=auto --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_f20d0 /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/12 -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/12/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/12/../../.. -Bsymbolic-functions -z relro CMakeFiles/cmTC_f20d0.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/12/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crtn.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/12/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/12/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/12/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccPC5SV4.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccMjpSB3.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -235,7 +235,7 @@ Parsed CXX implicit link information from above output:
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_a5469] ==> ignore
+    arg [cmTC_f20d0] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/Scrt1.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/../../../x86_64-linux-gnu/crti.o]
     arg [/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/12/crtbeginS.o]
@@ -249,7 +249,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/12/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/12/../../..]
     arg [-Bsymbolic-functions] ==> ignore
     arg [-zrelro] ==> ignore
-    arg [CMakeFiles/cmTC_a5469.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_f20d0.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -279,16 +279,16 @@ Parsed CXX implicit link information from above output:
 Determining if the include file pthread.h exists passed with the following output:
 Change Dir: /home/ich/src/SnakeOS/snake-store/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/media/ich/exSSD3/webview/depot_tools/ninja cmTC_2bc86 && [1/2] Building CXX object CMakeFiles/cmTC_2bc86.dir/CheckIncludeFile.cxx.o
-[2/2] Linking CXX executable cmTC_2bc86
+Run Build Command(s):/media/ich/exSSD3/webview/depot_tools/ninja cmTC_a76ca && [1/2] Building CXX object CMakeFiles/cmTC_a76ca.dir/CheckIncludeFile.cxx.o
+[2/2] Linking CXX executable cmTC_a76ca
 
 
 
 Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
 Change Dir: /home/ich/src/SnakeOS/snake-store/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/media/ich/exSSD3/webview/depot_tools/ninja cmTC_fde7d && [1/2] Building CXX object CMakeFiles/cmTC_fde7d.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_fde7d
+Run Build Command(s):/media/ich/exSSD3/webview/depot_tools/ninja cmTC_09ab6 && [1/2] Building CXX object CMakeFiles/cmTC_09ab6.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_09ab6
 
 
 Source file was:
@@ -315,8 +315,8 @@ int main(void)
 Performing C++ SOURCE FILE Test HAVE_STDATOMIC succeeded with the following output:
 Change Dir: /home/ich/src/SnakeOS/snake-store/obj-x86_64-linux-gnu/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/media/ich/exSSD3/webview/depot_tools/ninja cmTC_8a647 && [1/2] Building CXX object CMakeFiles/cmTC_8a647.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_8a647
+Run Build Command(s):/media/ich/exSSD3/webview/depot_tools/ninja cmTC_0c022 && [1/2] Building CXX object CMakeFiles/cmTC_0c022.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_0c022
 
 
 Source file was:

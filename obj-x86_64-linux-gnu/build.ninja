@@ -745,7 +745,7 @@ build mx-packageinstaller_zh_TW.qm | ${cmake_ninja_workdir}mx-packageinstaller_z
 #############################################
 # Phony custom command for CMakeFiles/snake-store_autogen_timestamp_deps
 
-build CMakeFiles/snake-store_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/snake-store_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.2.4 /usr/lib/x86_64-linux-gnu/libQt6Xml.so.6.2.4 /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.2.4 /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4 /usr/lib/qt6/libexec/uic
+build CMakeFiles/snake-store_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/snake-store_autogen_timestamp_deps: phony /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.2.4 /usr/lib/qt6/libexec/moc /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.2.4 /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.2.4 /usr/lib/x86_64-linux-gnu/libQt6Xml.so.6.2.4 /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.2.4 /usr/lib/qt6/libexec/uic
 
 
 #############################################
